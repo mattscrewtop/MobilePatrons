@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://service.mobileoffers.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" name="MobileOffersImplService" targetNamespace="http://service.mobileoffers.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://mobileoffers.winstarworldcasino.com/MobileOffersWS/MobileOffersWS?xsd=1" namespace="http://service.mobileoffers.com/" />
+    </xsd:schema>
+  </types>
+  <message name="validatePatron">
+    <part name="parameters" element="tns:validatePatron" />
+  </message>
+  <message name="validatePatronResponse">
+    <part name="parameters" element="tns:validatePatronResponse" />
+  </message>
+  <message name="retrieveLogin">
+    <part name="parameters" element="tns:retrieveLogin" />
+  </message>
+  <message name="retrieveLoginResponse">
+    <part name="parameters" element="tns:retrieveLoginResponse" />
+  </message>
+  <message name="compCashRequest">
+    <part name="parameters" element="tns:compCashRequest" />
+  </message>
+  <message name="compCashRequestResponse">
+    <part name="parameters" element="tns:compCashRequestResponse" />
+  </message>
+  <message name="getPatronByAcct">
+    <part name="parameters" element="tns:getPatronByAcct" />
+  </message>
+  <message name="getPatronByAcctResponse">
+    <part name="parameters" element="tns:getPatronByAcctResponse" />
+  </message>
+  <message name="updateNPAccount">
+    <part name="parameters" element="tns:updateNPAccount" />
+  </message>
+  <message name="updateNPAccountResponse">
+    <part name="parameters" element="tns:updateNPAccountResponse" />
+  </message>
+  <message name="resetNPAccount">
+    <part name="parameters" element="tns:resetNPAccount" />
+  </message>
+  <message name="resetNPAccountResponse">
+    <part name="parameters" element="tns:resetNPAccountResponse" />
+  </message>
+  <message name="linkAccount">
+    <part name="parameters" element="tns:linkAccount" />
+  </message>
+  <message name="linkAccountResponse">
+    <part name="parameters" element="tns:linkAccountResponse" />
+  </message>
+  <message name="createProspect">
+    <part name="parameters" element="tns:createProspect" />
+  </message>
+  <message name="createProspectResponse">
+    <part name="parameters" element="tns:createProspectResponse" />
+  </message>
+  <message name="getPatron">
+    <part name="parameters" element="tns:getPatron" />
+  </message>
+  <message name="getPatronResponse">
+    <part name="parameters" element="tns:getPatronResponse" />
+  </message>
+  <message name="createNPAccount">
+    <part name="parameters" element="tns:createNPAccount" />
+  </message>
+  <message name="createNPAccountResponse">
+    <part name="parameters" element="tns:createNPAccountResponse" />
+  </message>
+  <message name="createAccount">
+    <part name="parameters" element="tns:createAccount" />
+  </message>
+  <message name="createAccountResponse">
+    <part name="parameters" element="tns:createAccountResponse" />
+  </message>
+  <message name="getPowerRewards">
+    <part name="parameters" element="tns:getPowerRewards" />
+  </message>
+  <message name="getPowerRewardsResponse">
+    <part name="parameters" element="tns:getPowerRewardsResponse" />
+  </message>
+  <message name="getWinLoss">
+    <part name="parameters" element="tns:getWinLoss" />
+  </message>
+  <message name="getWinLossResponse">
+    <part name="parameters" element="tns:getWinLossResponse" />
+  </message>
+  <message name="retrievePatron">
+    <part name="parameters" element="tns:retrievePatron" />
+  </message>
+  <message name="retrievePatronResponse">
+    <part name="parameters" element="tns:retrievePatronResponse" />
+  </message>
+  <message name="redeemToken">
+    <part name="parameters" element="tns:redeemToken" />
+  </message>
+  <message name="redeemTokenResponse">
+    <part name="parameters" element="tns:redeemTokenResponse" />
+  </message>
+  <message name="validateUser">
+    <part name="parameters" element="tns:validateUser" />
+  </message>
+  <message name="validateUserResponse">
+    <part name="parameters" element="tns:validateUserResponse" />
+  </message>
+  <message name="getOffers">
+    <part name="parameters" element="tns:getOffers" />
+  </message>
+  <message name="getOffersResponse">
+    <part name="parameters" element="tns:getOffersResponse" />
+  </message>
+  <message name="getSweeps">
+    <part name="parameters" element="tns:getSweeps" />
+  </message>
+  <message name="getSweepsResponse">
+    <part name="parameters" element="tns:getSweepsResponse" />
+  </message>
+  <message name="getSweepDrawings">
+    <part name="parameters" element="tns:getSweepDrawings" />
+  </message>
+  <message name="getSweepDrawingsResponse">
+    <part name="parameters" element="tns:getSweepDrawingsResponse" />
+  </message>
+  <message name="compCashRequestByPatron">
+    <part name="parameters" element="tns:compCashRequestByPatron" />
+  </message>
+  <message name="compCashRequestByPatronResponse">
+    <part name="parameters" element="tns:compCashRequestByPatronResponse" />
+  </message>
+  <message name="updatePatronEmail">
+    <part name="parameters" element="tns:updatePatronEmail" />
+  </message>
+  <message name="updatePatronEmailResponse">
+    <part name="parameters" element="tns:updatePatronEmailResponse" />
+  </message>
+  <message name="getCompCashBalanceByAcct">
+    <part name="parameters" element="tns:getCompCashBalanceByAcct" />
+  </message>
+  <message name="getCompCashBalanceByAcctResponse">
+    <part name="parameters" element="tns:getCompCashBalanceByAcctResponse" />
+  </message>
+  <message name="getCompCashBalance">
+    <part name="parameters" element="tns:getCompCashBalance" />
+  </message>
+  <message name="getCompCashBalanceResponse">
+    <part name="parameters" element="tns:getCompCashBalanceResponse" />
+  </message>
+  <message name="getPatronByPatron">
+    <part name="parameters" element="tns:getPatronByPatron" />
+  </message>
+  <message name="getPatronByPatronResponse">
+    <part name="parameters" element="tns:getPatronByPatronResponse" />
+  </message>
+  <message name="compCashRequestByAcct">
+    <part name="parameters" element="tns:compCashRequestByAcct" />
+  </message>
+  <message name="compCashRequestByAcctResponse">
+    <part name="parameters" element="tns:compCashRequestByAcctResponse" />
+  </message>
+  <message name="resetPatronPassword">
+    <part name="parameters" element="tns:resetPatronPassword" />
+  </message>
+  <message name="resetPatronPasswordResponse">
+    <part name="parameters" element="tns:resetPatronPasswordResponse" />
+  </message>
+  <message name="getCompCashBalanceByPatron">
+    <part name="parameters" element="tns:getCompCashBalanceByPatron" />
+  </message>
+  <message name="getCompCashBalanceByPatronResponse">
+    <part name="parameters" element="tns:getCompCashBalanceByPatronResponse" />
+  </message>
+  <portType name="MobileOffers">
+    <operation name="validatePatron">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/validatePatronRequest" message="tns:validatePatron" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/validatePatronResponse" message="tns:validatePatronResponse" />
+    </operation>
+    <operation name="retrieveLogin">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/retrieveLoginRequest" message="tns:retrieveLogin" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/retrieveLoginResponse" message="tns:retrieveLoginResponse" />
+    </operation>
+    <operation name="compCashRequest">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/compCashRequestRequest" message="tns:compCashRequest" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/compCashRequestResponse" message="tns:compCashRequestResponse" />
+    </operation>
+    <operation name="getPatronByAcct">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getPatronByAcctRequest" message="tns:getPatronByAcct" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getPatronByAcctResponse" message="tns:getPatronByAcctResponse" />
+    </operation>
+    <operation name="updateNPAccount">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/updateNPAccountRequest" message="tns:updateNPAccount" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/updateNPAccountResponse" message="tns:updateNPAccountResponse" />
+    </operation>
+    <operation name="resetNPAccount">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/resetNPAccountRequest" message="tns:resetNPAccount" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/resetNPAccountResponse" message="tns:resetNPAccountResponse" />
+    </operation>
+    <operation name="linkAccount">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/linkAccountRequest" message="tns:linkAccount" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/linkAccountResponse" message="tns:linkAccountResponse" />
+    </operation>
+    <operation name="createProspect">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/createProspectRequest" message="tns:createProspect" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/createProspectResponse" message="tns:createProspectResponse" />
+    </operation>
+    <operation name="getPatron">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getPatronRequest" message="tns:getPatron" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getPatronResponse" message="tns:getPatronResponse" />
+    </operation>
+    <operation name="createNPAccount">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/createNPAccountRequest" message="tns:createNPAccount" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/createNPAccountResponse" message="tns:createNPAccountResponse" />
+    </operation>
+    <operation name="createAccount">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/createAccountRequest" message="tns:createAccount" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/createAccountResponse" message="tns:createAccountResponse" />
+    </operation>
+    <operation name="getPowerRewards">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getPowerRewardsRequest" message="tns:getPowerRewards" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getPowerRewardsResponse" message="tns:getPowerRewardsResponse" />
+    </operation>
+    <operation name="getWinLoss">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getWinLossRequest" message="tns:getWinLoss" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getWinLossResponse" message="tns:getWinLossResponse" />
+    </operation>
+    <operation name="retrievePatron">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/retrievePatronRequest" message="tns:retrievePatron" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/retrievePatronResponse" message="tns:retrievePatronResponse" />
+    </operation>
+    <operation name="redeemToken">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/redeemTokenRequest" message="tns:redeemToken" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/redeemTokenResponse" message="tns:redeemTokenResponse" />
+    </operation>
+    <operation name="validateUser">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/validateUserRequest" message="tns:validateUser" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/validateUserResponse" message="tns:validateUserResponse" />
+    </operation>
+    <operation name="getOffers">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getOffersRequest" message="tns:getOffers" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getOffersResponse" message="tns:getOffersResponse" />
+    </operation>
+    <operation name="getSweeps">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getSweepsRequest" message="tns:getSweeps" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getSweepsResponse" message="tns:getSweepsResponse" />
+    </operation>
+    <operation name="getSweepDrawings">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getSweepDrawingsRequest" message="tns:getSweepDrawings" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getSweepDrawingsResponse" message="tns:getSweepDrawingsResponse" />
+    </operation>
+    <operation name="compCashRequestByPatron">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/compCashRequestByPatronRequest" message="tns:compCashRequestByPatron" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/compCashRequestByPatronResponse" message="tns:compCashRequestByPatronResponse" />
+    </operation>
+    <operation name="updatePatronEmail">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/updatePatronEmailRequest" message="tns:updatePatronEmail" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/updatePatronEmailResponse" message="tns:updatePatronEmailResponse" />
+    </operation>
+    <operation name="getCompCashBalanceByAcct">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getCompCashBalanceByAcctRequest" message="tns:getCompCashBalanceByAcct" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getCompCashBalanceByAcctResponse" message="tns:getCompCashBalanceByAcctResponse" />
+    </operation>
+    <operation name="getCompCashBalance">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getCompCashBalanceRequest" message="tns:getCompCashBalance" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getCompCashBalanceResponse" message="tns:getCompCashBalanceResponse" />
+    </operation>
+    <operation name="getPatronByPatron">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getPatronByPatronRequest" message="tns:getPatronByPatron" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getPatronByPatronResponse" message="tns:getPatronByPatronResponse" />
+    </operation>
+    <operation name="compCashRequestByAcct">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/compCashRequestByAcctRequest" message="tns:compCashRequestByAcct" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/compCashRequestByAcctResponse" message="tns:compCashRequestByAcctResponse" />
+    </operation>
+    <operation name="resetPatronPassword">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/resetPatronPasswordRequest" message="tns:resetPatronPassword" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/resetPatronPasswordResponse" message="tns:resetPatronPasswordResponse" />
+    </operation>
+    <operation name="getCompCashBalanceByPatron">
+      <input wsam:Action="http://service.mobileoffers.com/MobileOffers/getCompCashBalanceByPatronRequest" message="tns:getCompCashBalanceByPatron" />
+      <output wsam:Action="http://service.mobileoffers.com/MobileOffers/getCompCashBalanceByPatronResponse" message="tns:getCompCashBalanceByPatronResponse" />
+    </operation>
+  </portType>
+  <binding name="MobileOffersImplPortBinding" type="tns:MobileOffers">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="validatePatron">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="retrieveLogin">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compCashRequest">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPatronByAcct">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updateNPAccount">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="resetNPAccount">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="linkAccount">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createProspect">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPatron">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createNPAccount">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createAccount">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPowerRewards">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getWinLoss">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="retrievePatron">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="redeemToken">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="validateUser">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getOffers">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSweeps">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSweepDrawings">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compCashRequestByPatron">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="updatePatronEmail">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getCompCashBalanceByAcct">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getCompCashBalance">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPatronByPatron">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="compCashRequestByAcct">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="resetPatronPassword">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getCompCashBalanceByPatron">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MobileOffersImplService">
+    <port name="MobileOffersImplPort" binding="tns:MobileOffersImplPortBinding">
+      <soap12:address location="https://mobileoffers.winstarworldcasino.com/MobileOffersWS/MobileOffersWS" />
+    </port>
+  </service>
+</definitions>

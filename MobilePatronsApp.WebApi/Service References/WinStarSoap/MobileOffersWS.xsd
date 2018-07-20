@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.mobileoffers.com/" targetNamespace="http://service.mobileoffers.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="compCashRequest" type="tns:compCashRequest" />
+  <xs:element name="compCashRequestByAcct" type="tns:compCashRequestByAcct" />
+  <xs:element name="compCashRequestByAcctResponse" type="tns:compCashRequestByAcctResponse" />
+  <xs:element name="compCashRequestByPatron" type="tns:compCashRequestByPatron" />
+  <xs:element name="compCashRequestByPatronResponse" type="tns:compCashRequestByPatronResponse" />
+  <xs:element name="compCashRequestResponse" type="tns:compCashRequestResponse" />
+  <xs:element name="createAccount" type="tns:createAccount" />
+  <xs:element name="createAccountResponse" type="tns:createAccountResponse" />
+  <xs:element name="createNPAccount" type="tns:createNPAccount" />
+  <xs:element name="createNPAccountResponse" type="tns:createNPAccountResponse" />
+  <xs:element name="createProspect" type="tns:createProspect" />
+  <xs:element name="createProspectResponse" type="tns:createProspectResponse" />
+  <xs:element name="getCompCashBalance" type="tns:getCompCashBalance" />
+  <xs:element name="getCompCashBalanceByAcct" type="tns:getCompCashBalanceByAcct" />
+  <xs:element name="getCompCashBalanceByAcctResponse" type="tns:getCompCashBalanceByAcctResponse" />
+  <xs:element name="getCompCashBalanceByPatron" type="tns:getCompCashBalanceByPatron" />
+  <xs:element name="getCompCashBalanceByPatronResponse" type="tns:getCompCashBalanceByPatronResponse" />
+  <xs:element name="getCompCashBalanceResponse" type="tns:getCompCashBalanceResponse" />
+  <xs:element name="getOffers" type="tns:getOffers" />
+  <xs:element name="getOffersResponse" type="tns:getOffersResponse" />
+  <xs:element name="getPatron" type="tns:getPatron" />
+  <xs:element name="getPatronByAcct" type="tns:getPatronByAcct" />
+  <xs:element name="getPatronByAcctResponse" type="tns:getPatronByAcctResponse" />
+  <xs:element name="getPatronByPatron" type="tns:getPatronByPatron" />
+  <xs:element name="getPatronByPatronResponse" type="tns:getPatronByPatronResponse" />
+  <xs:element name="getPatronResponse" type="tns:getPatronResponse" />
+  <xs:element name="getPowerRewards" type="tns:getPowerRewards" />
+  <xs:element name="getPowerRewardsResponse" type="tns:getPowerRewardsResponse" />
+  <xs:element name="getSweepDrawings" type="tns:getSweepDrawings" />
+  <xs:element name="getSweepDrawingsResponse" type="tns:getSweepDrawingsResponse" />
+  <xs:element name="getSweeps" type="tns:getSweeps" />
+  <xs:element name="getSweepsResponse" type="tns:getSweepsResponse" />
+  <xs:element name="getWinLoss" type="tns:getWinLoss" />
+  <xs:element name="getWinLossResponse" type="tns:getWinLossResponse" />
+  <xs:element name="linkAccount" type="tns:linkAccount" />
+  <xs:element name="linkAccountResponse" type="tns:linkAccountResponse" />
+  <xs:element name="redeemToken" type="tns:redeemToken" />
+  <xs:element name="redeemTokenResponse" type="tns:redeemTokenResponse" />
+  <xs:element name="resetNPAccount" type="tns:resetNPAccount" />
+  <xs:element name="resetNPAccountResponse" type="tns:resetNPAccountResponse" />
+  <xs:element name="resetPatronPassword" type="tns:resetPatronPassword" />
+  <xs:element name="resetPatronPasswordResponse" type="tns:resetPatronPasswordResponse" />
+  <xs:element name="retrieveLogin" type="tns:retrieveLogin" />
+  <xs:element name="retrieveLoginResponse" type="tns:retrieveLoginResponse" />
+  <xs:element name="retrievePatron" type="tns:retrievePatron" />
+  <xs:element name="retrievePatronResponse" type="tns:retrievePatronResponse" />
+  <xs:element name="updateNPAccount" type="tns:updateNPAccount" />
+  <xs:element name="updateNPAccountResponse" type="tns:updateNPAccountResponse" />
+  <xs:element name="updatePatronEmail" type="tns:updatePatronEmail" />
+  <xs:element name="updatePatronEmailResponse" type="tns:updatePatronEmailResponse" />
+  <xs:element name="validatePatron" type="tns:validatePatron" />
+  <xs:element name="validatePatronResponse" type="tns:validatePatronResponse" />
+  <xs:element name="validateUser" type="tns:validateUser" />
+  <xs:element name="validateUserResponse" type="tns:validateUserResponse" />
+  <xs:complexType name="compCashRequestByAcct">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+      <xs:element minOccurs="0" name="arg6" type="xs:string" />
+      <xs:element minOccurs="0" name="arg7" type="xs:string" />
+      <xs:element minOccurs="0" name="arg8" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compCashRequestByAcctResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="linkAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="linkAccountResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compCashRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+      <xs:element minOccurs="0" name="arg6" type="xs:string" />
+      <xs:element minOccurs="0" name="arg7" type="xs:string" />
+      <xs:element minOccurs="0" name="arg8" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compCashRequestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retrievePatron">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retrievePatronResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCompCashBalance">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCompCashBalanceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNPAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+      <xs:element minOccurs="0" name="arg6" type="xs:string" />
+      <xs:element minOccurs="0" name="arg7" type="xs:string" />
+      <xs:element minOccurs="0" name="arg8" type="xs:string" />
+      <xs:element minOccurs="0" name="arg9" type="xs:string" />
+      <xs:element minOccurs="0" name="arg10" type="xs:string" />
+      <xs:element minOccurs="0" name="arg11" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNPAccountResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validateUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validateUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compCashRequestByPatron">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+      <xs:element minOccurs="0" name="arg6" type="xs:string" />
+      <xs:element minOccurs="0" name="arg7" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compCashRequestByPatronResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="redeemToken">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="redeemTokenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:patron" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="patron">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="acctType" type="xs:string" />
+      <xs:element minOccurs="0" name="addr1" type="xs:string" />
+      <xs:element minOccurs="0" name="addr2" type="xs:string" />
+      <xs:element minOccurs="0" name="cashAvailable" type="xs:string" />
+      <xs:element minOccurs="0" name="city" type="xs:string" />
+      <xs:element minOccurs="0" name="currentCardLevel" type="xs:string" />
+      <xs:element minOccurs="0" name="currentPoints" type="xs:string" />
+      <xs:element minOccurs="0" name="dob" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="emailFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="error" type="xs:string" />
+      <xs:element minOccurs="0" name="facility" type="xs:string" />
+      <xs:element minOccurs="0" name="firstName" type="xs:string" />
+      <xs:element minOccurs="0" name="golfMember" type="xs:string" />
+      <xs:element minOccurs="0" name="hostFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="hostName" type="xs:string" />
+      <xs:element minOccurs="0" name="lastName" type="xs:string" />
+      <xs:element minOccurs="0" name="midInit" type="xs:string" />
+      <xs:element minOccurs="0" name="mobile" type="xs:string" />
+      <xs:element minOccurs="0" name="newsFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="nextCardLevel" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="phone" type="xs:string" />
+      <xs:element minOccurs="0" name="pointsAvailable" type="xs:string" />
+      <xs:element minOccurs="0" name="pointsToNextLevel" type="xs:string" />
+      <xs:element minOccurs="0" name="pointsToNextLevelByDate" type="xs:string" />
+      <xs:element minOccurs="0" name="sixMonthADT" type="xs:string" />
+      <xs:element minOccurs="0" name="state" type="xs:string" />
+      <xs:element minOccurs="0" name="token" type="xs:string" />
+      <xs:element minOccurs="0" name="userName" type="xs:string" />
+      <xs:element minOccurs="0" name="zip" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCompCashBalanceByAcct">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCompCashBalanceByAcctResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSweeps">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSweepsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:sweepstakes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sweepstakes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activation" type="xs:string" />
+      <xs:element minOccurs="0" name="activeEntries" type="xs:string" />
+      <xs:element minOccurs="0" name="bonusEntries" type="xs:string" />
+      <xs:element minOccurs="0" name="code" type="xs:string" />
+      <xs:element minOccurs="0" name="end" type="xs:string" />
+      <xs:element minOccurs="0" name="endTime" type="xs:string" />
+      <xs:element minOccurs="0" name="error" type="xs:string" />
+      <xs:element minOccurs="0" name="freeEntries" type="xs:string" />
+      <xs:element minOccurs="0" name="start" type="xs:string" />
+      <xs:element minOccurs="0" name="startTime" type="xs:string" />
+      <xs:element minOccurs="0" name="text" type="xs:string" />
+      <xs:element minOccurs="0" name="totalSweepEntries" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createAccountResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validatePatron">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validatePatronResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePatronEmail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePatronEmailResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPatronByAcct">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPatronByAcctResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:patron" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSweepDrawings">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSweepDrawingsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:sweepDrawings" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sweepDrawings">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activationFlag" type="xs:string" />
+      <xs:element minOccurs="0" name="drawingDate" type="xs:string" />
+      <xs:element minOccurs="0" name="drawingTime" type="xs:string" />
+      <xs:element minOccurs="0" name="end" type="xs:string" />
+      <xs:element minOccurs="0" name="endTime" type="xs:string" />
+      <xs:element minOccurs="0" name="entries" type="xs:string" />
+      <xs:element minOccurs="0" name="error" type="xs:string" />
+      <xs:element minOccurs="0" name="start" type="xs:string" />
+      <xs:element minOccurs="0" name="startTime" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPatronByPatron">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPatronByPatronResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:patron" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetPatronPassword">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetPatronPasswordResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCompCashBalanceByPatron">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCompCashBalanceByPatronResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getWinLoss">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getWinLossResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetNPAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetNPAccountResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:patron" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createProspect">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+      <xs:element minOccurs="0" name="arg6" type="xs:string" />
+      <xs:element minOccurs="0" name="arg7" type="xs:string" />
+      <xs:element minOccurs="0" name="arg8" type="xs:string" />
+      <xs:element minOccurs="0" name="arg9" type="xs:string" />
+      <xs:element minOccurs="0" name="arg10" type="xs:string" />
+      <xs:element minOccurs="0" name="arg11" type="xs:string" />
+      <xs:element minOccurs="0" name="arg12" type="xs:string" />
+      <xs:element minOccurs="0" name="arg13" type="xs:string" />
+      <xs:element minOccurs="0" name="arg14" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createProspectResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateNPAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" name="arg5" type="xs:string" />
+      <xs:element minOccurs="0" name="arg6" type="xs:string" />
+      <xs:element minOccurs="0" name="arg7" type="xs:string" />
+      <xs:element minOccurs="0" name="arg8" type="xs:string" />
+      <xs:element minOccurs="0" name="arg9" type="xs:string" />
+      <xs:element minOccurs="0" name="arg10" type="xs:string" />
+      <xs:element minOccurs="0" name="arg11" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateNPAccountResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPatron">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPatronResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:patron" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retrieveLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retrieveLoginResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPowerRewards">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPowerRewardsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:powerReward" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerReward">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amount" type="xs:string" />
+      <xs:element minOccurs="0" name="code" type="xs:string" />
+      <xs:element minOccurs="0" name="desc" type="xs:string" />
+      <xs:element minOccurs="0" name="endDate" type="xs:string" />
+      <xs:element minOccurs="0" name="endTime" type="xs:string" />
+      <xs:element minOccurs="0" name="error" type="xs:string" />
+      <xs:element minOccurs="0" name="programDetail" type="xs:string" />
+      <xs:element minOccurs="0" name="startDate" type="xs:string" />
+      <xs:element minOccurs="0" name="startTime" type="xs:string" />
+      <xs:element minOccurs="0" name="status" type="xs:string" />
+      <xs:element minOccurs="0" name="text" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getOffers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getOffersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:offer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="offer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="code" type="xs:string" />
+      <xs:element minOccurs="0" name="desc" type="xs:string" />
+      <xs:element minOccurs="0" name="end" type="xs:string" />
+      <xs:element minOccurs="0" name="error" type="xs:string" />
+      <xs:element minOccurs="0" name="programDetail" type="xs:string" />
+      <xs:element minOccurs="0" name="start" type="xs:string" />
+      <xs:element minOccurs="0" name="text" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
